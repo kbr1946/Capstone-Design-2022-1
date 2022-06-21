@@ -139,7 +139,7 @@
             android:text="남" />
 
         <RadioButton
-            android:id="@+id/gender_f"
+            android:id="@+id/genderF"
             android:layout_width="75dp"
             android:layout_height="32dp"
             android:text="여" />
@@ -149,7 +149,7 @@
         android:id="@+id/disease"
         android:layout_width="100dp"
         android:layout_height="32dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="65dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="질환명"
@@ -162,7 +162,7 @@
         android:id="@+id/disease_level"
         android:layout_width="100dp"
         android:layout_height="32dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="65dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="질환단계"
@@ -173,44 +173,36 @@
 
     <Spinner
         android:id="@+id/disease_input"
-        android:layout_width="100dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:entries="@array/sp_disease"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/disease"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Spinner
         android:id="@+id/disease_input2"
-        android:layout_width="100dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        android:entries="@array/g_diseaseStep"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/disease_level"
         app:layout_constraintTop_toBottomOf="@+id/disease_input" />
 
     <Button
-        android:id="@+id/save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="저장"
-        app:layout_constraintEnd_toStartOf="@+id/analyse"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/disease_level" />
-
-    <Button
         android:id="@+id/analyse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="160dp"
         android:text="분석"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/save"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/disease_input2" />
 
     <TextView
@@ -218,13 +210,14 @@
         android:layout_width="384dp"
         android:layout_height="180dp"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="21dp"
         android:background="#EA80FC"
         android:text=""
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/analyse" />
 
